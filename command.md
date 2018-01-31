@@ -1,8 +1,9 @@
 https://mobaxterm.mobatek.net/
 
+```
 #ssh
    
-  ssh -L 5555:localhost:5432 pharmmd@170.10.10.142
+  ssh -L 5555:localhost:5432 username@170.10.10.142
 
 
 
@@ -20,7 +21,7 @@ rvm version
 
 git config --global core.excludesfile ~/.gitignore_global
 git config --global core.editor vim
-rvm --ruby-version --create use ruby-1.9.3-p484@phuser
+rvm --ruby-version --create use ruby-1.9.3-p484@gems
 
 
 rvm info
@@ -346,3 +347,4 @@ free -m
  htop
  sudo dmidecode -t 17
 
+```

@@ -346,5 +346,13 @@ free -m
  top 
  htop
  sudo dmidecode -t 17
+ 
+ 
+ 
+ (get-appxpackage Microsoft.windowsStore).InstallLocation
+C:\Program Files\WindowsApps\Microsoft.WindowsStore_11712.1001.13.0_x64__8wekyb3d8bbwe
+PS C:\WINDOWS\system32> $manifest = (get-appxpackage Microsoft.windowsStore).InstallLocation + '\AppxManifest.xml'
+PS C:\WINDOWS\system32> add-appxpackage -DisableDevelopmentMode -Register $manifest
+PS C:\WINDOWS\system32> add-appxpackage -DisableDevelopmentMode -Register $manifest
 
 ```

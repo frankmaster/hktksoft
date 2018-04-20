@@ -1,0 +1,23 @@
+1. gcc -v  -g -Wall hello.c hello
+2. readelf -a hello  # elf: application format
+3. strace ./hello
+4. 在 linux 环境中，执行一个命令，首先是由 shell 调用 fork,然后在
+子进程中来真正执行这个命令
+5. 系统调用, glibc
+6. 线程安全 阻塞与非阻塞 同步与非同步
+
+文件，文件描述符与文件表 
+7. lsof
+suid sgid, stricky
+stdio, stdout, stderr （标准输入，标准输出，错误输出）
+
+8. 进程是操作系统运行程序的一个实例，也是操作系统分配资源的单位。每个进程都有
+独立的进程空间。
+
+ld -verbose (链接器)
+objdump
+
+编译生成和使用动态库
+ gcc _Wall -shared xxx.c -o xxx.lib.so
+ 
+ valgrind 内存检测与定位
